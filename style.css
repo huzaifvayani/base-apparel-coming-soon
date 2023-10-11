@@ -81,7 +81,7 @@ input::placeholder{
     color: #ce8f93;
 }
 
-@media(max-width: 555px){
+@media(max-width: 455px){
     .container{
         display: block;
     }
