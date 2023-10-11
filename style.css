@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.images img{
+    height: 535px;
+    width: 500px;
+    margin-right: 150px;
+    margin-top: 0px;
+}
+
+.text{
+    margin-left: 150px;
+}
+
+.logo-image{
+    margin-top: 60px;
+    margin-left: 150px;
+}
+h2{
+    font-size: 4rem;
+    color: #453e3d;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+h1{
+    font-size: 4rem;
+    margin-top: 100px;
+    color: #dab5b7;
+    font-weight: lighter;
+}
+p{
+    margin-top: 20px;
+    color: #c6a2a4;
+    margin-right: 100px;
+    line-height: 25px;
+}
+.flexing{
+    display: flex;
+    margin-top: 50px;
+}
+input{
+    width: 350px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #e1d3d7;
+    padding-left: 30px;
+}
+input::placeholder{
+    color: #f2e6e5;
+}
+.btn{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    left: 450px;
+    z-index: 2;
+    border-radius: 30px;
+    border: none;
+    background: url("images/icon-arrow.svg") no-repeat #f19a99 center;
+    cursor: pointer;
+}
+.error{
+    font-size: .8rem;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #ce8f93;
+}
+
+@media(max-width: 555px){
+    body{
+       overflow-x: hidden;
+    }
+    .container{
+        display: block;
+    }
+    .logo-image{
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .images img{
+        margin-top: 30px;
+        height: 250px;
+        width: 480px;
+    }
+    .text{
+        margin-left: 0;
+        width: 480px;
+        margin-bottom: 50px;
+    }
+    h1, h2, p{
+        text-align: center;
+    }
+    h2{
+        margin-right: 0;
+    }
+    p{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .btn{
+        left: 310px;
+    }
+    .flexing{
+        margin: 0 auto;
+    }
+    input{
+        width: 300px;
+        margin-left: 90px;
+    }
+    .error{
+        margin-left: 100px;
+    }
+}
